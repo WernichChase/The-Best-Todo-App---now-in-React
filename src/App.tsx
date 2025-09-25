@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 
+type TodoItem = any;
+
 function App() {
   const onButtonClicked = () => alert("MethodNotImplementedException");
 
   // gives error when array empty
-  const data: any = [{ id: -1, title: "none", completed: false }];
+  const data: TodoItem = [{ id: -1, title: "none", completed: false }];
 
   // fetch:
   fetch("https://jsonplaceholder.typicode.com/todos")
